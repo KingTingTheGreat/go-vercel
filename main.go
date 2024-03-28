@@ -14,6 +14,9 @@ func main() {
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Hello from JTing")
 	})
+	e.GET("/jting", func(c echo.Context) error {
+		return c.String(http.StatusOK, "Hello from JTing")
+	})
 	e.GET("/api/jting", func(c echo.Context) error {
 		return c.JSON(http.StatusOK, map[string]string{"message": "Hello from JTing"})
 	})
